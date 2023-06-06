@@ -160,7 +160,81 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><h2 id="1-组成部分"><a href="#1-组成部分" class="headerlink" title="1.组成部分"></a>1.组成部分</h2><h3 id="ECMAScriptDOMBOM"><a href="#ECMAScriptDOMBOM" class="headerlink" title="ECMAScript	DOM	BOM"></a>ECMAScript	DOM	BOM</h3><h2 id="2-特点"><a href="#2-特点" class="headerlink" title="2.特点"></a>2.特点</h2><ul>
+<li>解释型语言</li>
+<li>动态语言</li>
+<li>类似于c和java的语法结构</li>
+<li>基于原型的面向对象的语言</li>
+<li>严格区分大小写</li>
+</ul>
+<h2 id="3-使用"><a href="#3-使用" class="headerlink" title="3.使用"></a>3.使用</h2><ul>
+<li><p>标签引用：在html中用script标签直接使用</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="title function_">alert</span>(<span class="string">&quot;Hello,World!&quot;</span>);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>文件引用：在一个单独的js文件中也可以编写JavaScript代码，然后在HTML文件中使用script标签进行引用</p>
+<p>main.html</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;main.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>main.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">alert</span>(<span class="string">&quot;Hello,World!&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="4-输出"><a href="#4-输出" class="headerlink" title="4.输出"></a>4.输出</h2><ul>
+<li><p>页面输出</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 页面输出 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">document</span>.<span class="title function_">write</span>(<span class="string">&quot;hello world!&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>控制台输出</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 控制台输出 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;控制台输出语言&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">info</span>(<span class="string">&quot;输出一条信息&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&quot;输出一条错误&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">warn</span>(<span class="string">&quot;输出一条警告&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>弹窗窗口输出</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 弹窗窗口输出 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="title function_">alert</span>(<span class="string">&quot;hello world!&quot;</span>)</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="5-注释"><a href="#5-注释" class="headerlink" title="5.注释"></a>5.注释</h2><ul>
+<li><p>单行注释</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">// 这是注释内容</span></span></span><br><span class="line"><span class="language-javascript">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello,World!&quot;</span>);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>多行注释</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">/**</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">     * 这是注释内容</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">     */</span></span></span><br><span class="line"><span class="language-javascript">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello,World!&quot;</span>);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="6-基础语法"><a href="#6-基础语法" class="headerlink" title="6.基础语法"></a>6.基础语法</h2><h3 id="6-1、标识符"><a href="#6-1、标识符" class="headerlink" title="6.1、标识符"></a>6.1、标识符</h3><p>所谓标识符，就是指给变量、函数、属性或函数的参数起名字。</p>
+<p>标识符可以是按照下列格式规则组合起来的一或多个字符：</p>
+<ul>
+<li>第一个字符必须是一个字母、下划线（ _ ）或一个美元符号（ $ ）。</li>
+<li>其它字符可以是字母、下划线、美元符号或数字。</li>
+<li>按照惯例，ECMAScript 标识符采用<strong>驼峰命名法</strong>。</li>
+<li>标识符不能是关键字和保留字符。</li>
+</ul>
+<h3 id="6-2、字面量和变量"><a href="#6-2、字面量和变量" class="headerlink" title="6.2、字面量和变量"></a>6.2、字面量和变量</h3><h4 id="6-2-1、字面量"><a href="#6-2-1、字面量" class="headerlink" title="6.2.1、字面量"></a>6.2.1、字面量</h4><p>字面量实际上就是一些固定的值，比如：1、2 、3、true、false、null、NaN、“hello”，字面量都是不可以改变的，由于字面量不是很方便使用，所以在JavaScript中很少直接使用字面量，使用的而是变量。</p>
+<h4 id="6-2-2、-变量"><a href="#6-2-2、-变量" class="headerlink" title="6.2.2、*变量"></a>6.2.2、*变量</h4><p>变量的作用是给某一个值或对象标注名称。比如我们的程序中有一个值123，这个值我们是需要反复使用的，这个时候 我们最好将123这个值赋值给一个变量，然后通过变量去使用123这个值。</p>
+<p><strong>变量声明</strong>：使用var关键字声明一个变量。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">123</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-3、数据类型"><a href="#6-3、数据类型" class="headerlink" title="6.3、数据类型"></a>6.3、数据类型</h3><h4 id="6-3-1、类型分类"><a href="#6-3-1、类型分类" class="headerlink" title="6.3.1、类型分类"></a>6.3.1、类型分类</h4><ul>
+<li>字符串型（String）</li>
+<li>数值型（Number）</li>
+<li>布尔型（Boolean）</li>
+<li>undefined型（Undefined）</li>
+<li>null型（Null）</li>
+</ul>
+<p>这5种之外的类型都称为<strong>Object</strong>，所以总的来看JavaScript中共有六种数据类型。</p>
+<h4 id="6-3-2、typeof运算符"><a href="#6-3-2、typeof运算符" class="headerlink" title="6.3.2、typeof运算符"></a>6.3.2、typeof运算符</h4><p><strong>使用typeof操作符可以用来检查一个变量的数据类型。</strong></p>
+<p><strong>使用方式</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> 数据</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例代码</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="number">123</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="string">&quot;Hello,World!&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="literal">true</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="literal">undefined</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="literal">null</span>);</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行结果</strong></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230606161251895.png" alt="image-20230606161251895"></p>
+<p>​	</p>
+
       
 
       
@@ -168,11 +242,210 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">js学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2023/06/06/JavaScript%E5%AD%A6%E4%B9%A0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-我的第三篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/06/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第三篇博客</a>
+    </h1>
+  
+
+        
+        <a href="/2023/06/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+  	<time datetime="2023-06-06T07:15:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="1-选择器"><a href="#1-选择器" class="headerlink" title="1.选择器"></a>1.选择器</h2><h3 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello world!<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">color</span> : <span class="string">&quot;red&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="类名选择器"><a href="#类名选择器" class="headerlink" title="类名选择器"></a>类名选择器</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;red&quot;</span>&gt;</span></span><br><span class="line">    Hello world!</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.red</span> &#123;</span><br><span class="line"> 	<span class="attribute">color</span> : <span class="string">&quot;red&quot;</span>;   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h3><h3 id="通配符选择器"><a href="#通配符选择器" class="headerlink" title="通配符选择器"></a>通配符选择器</h3><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2.字体样式"></a>2.字体样式</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">font-weight</span>: <span class="number">400</span>;</span><br><span class="line">    <span class="attribute">font-style</span>: normal;</span><br><span class="line">    <span class="attribute">font-family</span>:	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">font</span>:normal <span class="number">700</span> <span class="number">20px</span> 宋体;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-首行缩进"><a href="#3-首行缩进" class="headerlink" title="3.首行缩进"></a>3.首行缩进</h2><p>直接根据字号大小写首行缩进。</p>
+<p>缺点过于麻烦，如果字号大小改变需要更改。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">text-indent</span>: <span class="number">32px</span></span><br><span class="line">    text-size: <span class="number">16px</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>em为当前一个字所占的大小为单位。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">text-indent</span>: <span class="number">2em</span>;</span><br><span class="line">    text-size: <span class="number">16px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-文本水平对齐"><a href="#4-文本水平对齐" class="headerlink" title="4.文本水平对齐"></a>4.文本水平对齐</h2><p>text-align:</p>
+<p>rigtht	left	center</p>
+<p><strong>标签内容对齐方式</strong></p>
+<p><strong>文本	span标签	a标签(链接)	input标签	img标签</strong></p>
+<h2 id="5-文本修饰"><a href="#5-文本修饰" class="headerlink" title="5.文本修饰"></a>5.文本修饰</h2><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230524154056758.png" alt="image-20230524154056758"></p>
+<h2 id="6-行高"><a href="#6-行高" class="headerlink" title="6.行高"></a>6.行高</h2><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230524155040350.png" alt="image-20230524155040350"></p>
+<h2 id="7-选择器进阶"><a href="#7-选择器进阶" class="headerlink" title="7.选择器进阶"></a>7.选择器进阶</h2><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230525134900423.png" alt="image-20230525134900423"></p>
+<h3 id="复合选择器"><a href="#复合选择器" class="headerlink" title="复合选择器"></a>复合选择器</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230525140324012.png" alt="image-20230525140324012"></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230525140912031.png" alt="image-20230525140912031"></p>
+<h3 id="并集选择器"><a href="#并集选择器" class="headerlink" title="并集选择器"></a>并集选择器</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230525141325619.png" alt="image-20230525141325619"></p>
+<h3 id="交集选择器"><a href="#交集选择器" class="headerlink" title="交集选择器"></a>交集选择器</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230525141838834.png" alt="image-20230525141838834"></p>
+<h3 id="hover伪类选择器（鼠标悬停）"><a href="#hover伪类选择器（鼠标悬停）" class="headerlink" title="hover伪类选择器（鼠标悬停）"></a>hover伪类选择器（鼠标悬停）</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230525143225174.png" alt="image-20230525143225174"></p>
+<h2 id="8-背景"><a href="#8-背景" class="headerlink" title="8.背景"></a>8.背景</h2><h3 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230525144250666.png" alt="image-20230525144250666"></p>
+<h3 id="背景平铺"><a href="#背景平铺" class="headerlink" title="背景平铺"></a>背景平铺</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230525144804384.png" alt="image-20230525144804384"></p>
+<h3 id="背景位置"><a href="#背景位置" class="headerlink" title="背景位置"></a>背景位置</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230525145430692.png" alt="image-20230525145430692"></p>
+<h3 id="背景复合属性"><a href="#背景复合属性" class="headerlink" title="背景复合属性"></a>背景复合属性</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230525145954293.png" alt="image-20230525145954293"></p>
+<h2 id="9-元素显示模式"><a href="#9-元素显示模式" class="headerlink" title="9.元素显示模式"></a>9.元素显示模式</h2><h3 id="块级元素："><a href="#块级元素：" class="headerlink" title="块级元素："></a>块级元素：</h3><ul>
+<li>独占一行 </li>
+<li>宽度默认为父级元素的宽度，高度由内容决定 </li>
+<li>可以设置宽高	代表标签：div 、p、h、ul、li</li>
+</ul>
+<h3 id="行内元素："><a href="#行内元素：" class="headerlink" title="行内元素："></a>行内元素：</h3><ul>
+<li>一行显示多个</li>
+<li>宽度高度默认由内容决定 3.不可以设置宽高	代表标签：a、span、b、u、strong</li>
+</ul>
+<h3 id="行内块元素："><a href="#行内块元素：" class="headerlink" title="行内块元素："></a>行内块元素：</h3><ul>
+<li>一行可以显示多个 2.可以设置宽高	代表标签：input、textarea、button、select</li>
+</ul>
+<h3 id="元素类型转换"><a href="#元素类型转换" class="headerlink" title="元素类型转换"></a>元素类型转换</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230525153101189.png" alt="image-20230525153101189"></p>
+<h3 id="元素标签嵌套规范"><a href="#元素标签嵌套规范" class="headerlink" title="*元素标签嵌套规范"></a>*元素标签嵌套规范</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230525153803868.png" alt="image-20230525153803868"></p>
+<p><strong>p与h不能互相嵌套，p不能包含div。a标签内可以嵌套任意元素，但是不能嵌套a标签</strong></p>
+<h2 id="10-继承性"><a href="#10-继承性" class="headerlink" title="10.继承性"></a>10.继承性</h2><h3 id="所有控制文字的修饰都是可以继承的"><a href="#所有控制文字的修饰都是可以继承的" class="headerlink" title="所有控制文字的修饰都是可以继承的"></a>所有控制文字的修饰都是可以继承的</h3><p><strong>超链接不能继承颜色，标题标签不能继承字号大小</strong></p>
+<h2 id="11-层叠性"><a href="#11-层叠性" class="headerlink" title="11.层叠性"></a>11.层叠性</h2><h3 id="在同一个选择器中后面的属性覆盖前面的属性"><a href="#在同一个选择器中后面的属性覆盖前面的属性" class="headerlink" title="在同一个选择器中后面的属性覆盖前面的属性"></a>在同一个选择器中后面的属性覆盖前面的属性</h3><h2 id="12-优先级"><a href="#12-优先级" class="headerlink" title="12.优先级"></a>12.优先级</h2><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230527153632423.png" alt="image-20230527153632423"></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230527153750815.png" alt="image-20230527153750815"></p>
+<h2 id="13-权重叠加计算"><a href="#13-权重叠加计算" class="headerlink" title="13.权重叠加计算"></a>13.权重叠加计算</h2><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230527154756737.png" alt="image-20230527154756737"></p>
+<h2 id="14-盒子模型"><a href="#14-盒子模型" class="headerlink" title="14.盒子模型"></a>14.盒子模型</h2><h3 id="内边距-padding"><a href="#内边距-padding" class="headerlink" title="内边距 padding"></a>内边距 padding</h3><ul>
+<li>盒子内容和盒子边框的间距</li>
+</ul>
+<h3 id="外边距-margin"><a href="#外边距-margin" class="headerlink" title="外边距 margin"></a>外边距 margin</h3><ul>
+<li>盒子与盒子的间距</li>
+</ul>
+<h3 id="边框-border"><a href="#边框-border" class="headerlink" title="边框 border"></a>边框 border</h3><ul>
+<li>盒子的边框</li>
+</ul>
+<h3 id="padding和border会撑大盒子需要做减法"><a href="#padding和border会撑大盒子需要做减法" class="headerlink" title="padding和border会撑大盒子需要做减法"></a>padding和border会撑大盒子需要做减法</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230527173450483.png" alt="image-20230527173450483"></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230527173849873.png" alt="image-20230527173849873"></p>
+<h3 id="外边距折叠现象"><a href="#外边距折叠现象" class="headerlink" title="外边距折叠现象"></a>外边距折叠现象</h3><h4 id="两个盒子外边距垂直分布问题"><a href="#两个盒子外边距垂直分布问题" class="headerlink" title="两个盒子外边距垂直分布问题"></a>两个盒子外边距垂直分布问题</h4><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230528115940656.png" alt="image-20230528115940656"></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230528120424795.png" alt="image-20230528120424795"></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230528120401898.png" alt="image-20230528120401898"></p>
+<h4 id="塌陷问题，盒子的嵌套时产生的问题"><a href="#塌陷问题，盒子的嵌套时产生的问题" class="headerlink" title="塌陷问题，盒子的嵌套时产生的问题"></a>塌陷问题，盒子的嵌套时产生的问题</h4><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230528121340006.png" alt="image-20230528121340006"></p>
+<h4 id="行内标签用内边距和外边距的效果："><a href="#行内标签用内边距和外边距的效果：" class="headerlink" title="行内标签用内边距和外边距的效果："></a>行内标签用内边距和外边距的效果：</h4><p><strong>内边距和外边距无法改变行内标签的垂直方向的位置，要想改变垂直方向位置可以设置行高来解决这个问题</strong></p>
+<h2 id="15-浮动"><a href="#15-浮动" class="headerlink" title="15.浮动"></a>15.浮动</h2><h3 id="结构伪类选择器"><a href="#结构伪类选择器" class="headerlink" title="结构伪类选择器"></a>结构伪类选择器</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230528124153983.png" alt="image-20230528124153983"></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230528125756623.png" alt="image-20230528125756623"></p>
+<h3 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230528164631133.png" alt="image-20230528164631133"></p>
+<h3 id="标准流"><a href="#标准流" class="headerlink" title="标准流"></a>标准流</h3><h3 id="浮动：用于左右块布局"><a href="#浮动：用于左右块布局" class="headerlink" title="*浮动：用于左右块布局"></a>*浮动：用于左右块布局</h3><ul>
+<li><p>图文环绕</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">float</span>: left;</span><br><span class="line"><span class="attribute">float</span>: right;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>盒子浮动</p>
+<p><strong>盒子会与面层不在一个层次漂浮在面层之上不占面层空间</strong><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230528173544641.png" alt="image-20230528173544641"></p>
+</li>
+</ul>
+<p>​	<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230528173559179.png" alt="image-20230528173559179">	</p>
+<p><strong>浮动不会生效text-align:center和margin:0 auto</strong></p>
+<h2 id="16-css书写顺序"><a href="#16-css书写顺序" class="headerlink" title="16.css书写顺序"></a>16.css书写顺序</h2><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230529104200945.png" alt="image-20230529104200945"></p>
+<h2 id="17-清除浮动"><a href="#17-清除浮动" class="headerlink" title="17.清除浮动"></a>17.清除浮动</h2><ul>
+<li><p>给浮动元素父类标签设置高度</p>
+</li>
+<li><p>给浮动元素的父类标签内容后面额外添加一个标签</p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230529144708463.png" alt="image-20230529144708463"></p>
+</li>
+<li><p>单伪元素清除</p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230529145417750.png" alt="image-20230529145417750"></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230529150656504.png" alt="image-20230529150656504"></p>
+</li>
+<li><p>双伪元素清除</p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230529150940410.png" alt="image-20230529150940410"></p>
+</li>
+<li><p>给父元素overflow:hidden 清除浮动</p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230529151531075.png" alt="image-20230529151531075"></p>
+</li>
+</ul>
+<h2 id="18-定位"><a href="#18-定位" class="headerlink" title="18.定位"></a>18.定位</h2><p>​	<strong>用于盒子之间的层叠</strong></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230603142354051.png" alt="image-20230603142354051"></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230603142512573.png" alt="image-20230603142512573"></p>
+<p><strong>相对定位不会改变原有标签的标准流</strong></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230603144312300.png" alt="image-20230603144312300"></p>
+<p><strong>绝对定位会改变标签原有的标注流（变为行内块标签的特点），若父类有定位则以父类为参照物进行定位，否则以浏览器窗口为参照物进行定位</strong></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230603145233438.png" alt="image-20230603145233438"></p>
+<p><strong>绝对定位不能用magin 0 auto居中</strong></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230603152138569.png" alt="image-20230603152138569"></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230603152626566.png" alt="image-20230603152626566"></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230603154214620.png" alt="image-20230603154214620"></p>
+<p><strong>转换为行内块</strong></p>
+<h2 id="19-元素层级问题"><a href="#19-元素层级问题" class="headerlink" title="19.元素层级问题"></a>19.元素层级问题</h2><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230603155107637.png" alt="image-20230603155107637"></p>
+<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230603155548261.png" alt="image-20230603155548261"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">css学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2023/06/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
         </p>
       
 
@@ -590,6 +863,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">HTML5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">css学习</a>
               </li>
             
             <div class="clearfix"></div>
